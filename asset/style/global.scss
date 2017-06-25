@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+
+body, html, div {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+h1, h2, h3, h4, h5, h6 p {
+  margin: 0;
+  padding: 0;
+}
+
+input, a, button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus, input:focus {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+ul, ol, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
