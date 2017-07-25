@@ -1,8 +1,46 @@
 # easywebpack-weex-boilerplate
 
-weex native and web building boilerplate for webpack
+Weex Native and Web building boilerplate for Webpack
 
-## Usage
+## 使用
+
+#### 安装cli
+
+```bash
+npm install easywebpack-cli -g
+```
+
+#### 安装依赖
+
+```bash
+npm install
+npm start
+```
+
+
+
+#### 启动应用
+
+```bash
+npm start
+```
+
+
+#### 项目构建
+
+```bash
+// 直接运行(编译文件全部在内存里面,本地开发使用)
+npm start
+
+// 编译文件到磁盘打包使用(发布测试环境)
+npm run build-dev 或者 easywebpack build dev
+
+// 编译文件到磁盘打包使用(发布正式环境)
+npm run build 或者 easywebpack build prod
+
+```
+
+## 不使用cli, 直接使用 easywebpack-weex
 
 ```js
 //build/index.js
@@ -20,18 +58,6 @@ if (NODE_SERVER) {
 }
 ```
 
-
-## Run
-
-```js
-"scripts": {
-    "start": "cross-env node build",
- }   
-```
-
-```bash
-npm start
-```
 
 start webpack debug server: http://127.0.0.1:9000/debug
 
