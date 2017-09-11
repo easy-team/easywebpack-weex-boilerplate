@@ -1,6 +1,6 @@
 # easywebpack-weex-boilerplate
 
-Weex Native and Web building boilerplate for Webpack
+Weex Native and Web building boilerplate for Webpack(2.x.x).
 
 ## 使用
 
