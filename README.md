@@ -1,6 +1,6 @@
 # easywebpack-weex-boilerplate
 
-Weex Native and Web building boilerplate for Webpack(2.x.x).
+Weex Native and Web building boilerplate for Webpack3.
 
 ## 使用
 
@@ -33,7 +33,7 @@ npm start
 npm start
 
 // 编译文件到磁盘打包使用(发布测试环境)
-npm run build-dev 或者 easywebpack build dev
+easywebpack build test
 
 // 编译文件到磁盘打包使用(发布正式环境)
 npm run build 或者 easywebpack build prod
@@ -59,6 +59,6 @@ if (NODE_SERVER) {
 ```
 
 
-start webpack debug server: http://127.0.0.1:9000/debug
+start webpack debug server: http://127.0.0.1:8888/debug
 
 ![UI-VIEW](https://github.com/hubcarl/easywebpack-weex-boilerplate/blob/master/doc/webpack-tool-ui-view.png)
