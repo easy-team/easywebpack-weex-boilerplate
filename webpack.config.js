@@ -14,6 +14,9 @@ module.exports = {
     framework: 'app/web/framework',
     store: 'app/web/store'
   },
+  install: {
+    save: false
+  },
   create() {
     if (this.type === 'web') {
       this.addEntry('vendor', [path.join(this.config.baseDir, 'framework/weex/web.js')]);
