@@ -8,18 +8,31 @@ module.exports = {
     template: 'view/layout.html'
   },
   alias: {
-    asset: 'app/web/asset',
-    app: 'app/web/framework/vue/app.js',
-    component: 'app/web/component',
-    framework: 'app/web/framework',
-    store: 'app/web/store'
+    asset: 'asset',
+    app: 'framework/vue/app.js',
+    component: 'component',
+    framework: 'framework',
+    store: 'store'
   },
-  install: {
-    save: false
+  options: {},
+  loaders: {
+    eslint: false,
+    less: false,
+    stylus: false
+  },
+  plugins: {
+    imagemini: false
   },
   create() {
-    if (this.type === 'web') {
-      this.addEntry('vendor', [path.join(this.config.baseDir, 'framework/weex/web.js')]);
-    }
+    // call api custom config
+  },
+  onWeb(){
+    this.addEntry('vendor', [path.join(this.config.baseDir, 'framework/weex/web.js')]);
+  },
+  onWeex(){
+
+  },
+  done(){
+
   }
 };
