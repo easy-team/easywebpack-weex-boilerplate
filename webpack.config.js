@@ -14,25 +14,16 @@ module.exports = {
     framework: 'framework',
     store: 'store'
   },
-  options: {},
   loaders: {
-    eslint: false,
-    less: false,
-    stylus: false
   },
   plugins: {
-    imagemini: false
-  },
-  create() {
-    // call api custom config
-  },
-  onWeb(){
-    this.addEntry('vendor', [path.join(this.config.baseDir, 'framework/weex/web.js')]);
-  },
-  onWeex(){
 
   },
-  done(){
+  lib: [path.join(__dirname, 'framework/weex/web.js')],
+  onWeex() {
+
+  },
+  done() {
 
   }
 };
