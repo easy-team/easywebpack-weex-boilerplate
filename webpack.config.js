@@ -3,36 +3,13 @@ const path = require('path');
 module.exports = {
   framework: 'weex',
   entry: {
-    include: 'page',
-    exclude: ['page/html'],
-    template: 'view/layout.html'
+    css: 'src/page/css/index.js',
+    sass: 'src/page/sass/index.js',
+    cssfile: 'src/page/cssfile/index.js'
   },
-  alias: {
-    asset: 'asset',
-    app: 'framework/vue/app.js',
-    component: 'component',
-    framework: 'framework',
-    store: 'store'
-  },
-  options: {},
-  loaders: {
-    eslint: false,
-    less: false,
-    stylus: false
-  },
-  plugins: {
-    imagemini: false
-  },
-  create() {
-    // call api custom config
-  },
-  onWeb(){
-    this.addEntry('vendor', [path.join(this.config.baseDir, 'framework/weex/web.js')]);
-  },
-  onWeex(){
-
-  },
-  done(){
-
-  }
+  template: 'src/view/layout.html',
+  lib:[path.join(__dirname, 'src/framework/weex/web.js')],
+  loaders: {},
+  plugins: {},
+  done() {}
 };
